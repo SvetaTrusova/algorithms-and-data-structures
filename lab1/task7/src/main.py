@@ -1,26 +1,18 @@
-from lab1.utils import memory_usage_process
+from lab1.utils import memory_usage_process, read_input_7, write_output_7
 
 path_input = "../txtf/input.txt"
 path_output = "../txtf/output.txt"
+
+
 def main():
-    with open(path_input, 'r') as f:
-        n = int(f.readline())
-        massive1 = [float(a) for a in f.readline().split()]
-        massive = []
-        cnt = 0
-        for i in massive1:
-            cnt += 1
-            massive.append([i, cnt])
+    n, massive1 = read_input_7(path_input)
+    massive = [(massive1[i], i + 1) for i in range(n)]
     massive = sorted(massive)
 
-    with open(path_output, 'w') as f:
-        f.write(str(massive[0][1]))
-        f.write(' ')
-        f.write(str(massive[n // 2][1]))
-        f.write(' ')
-        f.write(str(massive[-1][1]))
+    write_output_7(path_output, massive, n)
 
 print(f"Memory used by the current process: {memory_usage_process()} Megabytes")
 
 if __name__ == '__main__':
     main()
+

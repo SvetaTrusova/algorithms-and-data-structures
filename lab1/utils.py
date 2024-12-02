@@ -105,3 +105,19 @@ def bubblesort(n, data):
             if data[j] > data[j+1]:
                 data[j], data[j+1] = data[j+1], data[j]
     return data
+
+
+def read_input_7(path_input):
+    with open(path_input, 'r') as f:
+        n = int(f.readline())
+        massive1 = [float(a) for a in f.readline().split()]
+    return n, massive1
+
+
+def write_output_7(path_output, massive, n):
+    with open(path_output, 'w') as f:
+        f.write(str(massive[0][1]))
+        f.write(' ')
+        f.write(str(massive[n // 2][1]))
+        f.write(' ')
+        f.write(str(massive[-1][1]))
