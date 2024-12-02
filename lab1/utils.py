@@ -1,7 +1,3 @@
-import time
-import psutil
-import os
-
 path_input = "../txtf/input.txt"
 path_output = "../txtf/output.txt"
 
