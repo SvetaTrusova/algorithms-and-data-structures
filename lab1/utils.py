@@ -2,9 +2,6 @@ import os
 import psutil
 import time
 
-path_input = "../txtf/input.txt"
-path_output = "../txtf/output.txt"
-
 
 def memory_usage_process():
     """Возвращает общее количество памяти (в байтах), использованное текущим процессом."""
@@ -12,7 +9,7 @@ def memory_usage_process():
     return process.memory_info().rss / 2**20 # rss - Resident Set Size, фактическое использование памяти процессом
 
 
-def read_input() -> tuple[int, list[int]]:
+def read_input(path_input) -> tuple[int, list[int]]:
     """
     Функция для чтения входных данных из файла 'input.txt'.
 
@@ -32,7 +29,7 @@ def read_file_line(path: str, num: int) -> str:
     return line
 
 
-def write_output(string: str) -> None:
+def write_output(string, path_output) -> None:
     """
     Функция для записи выходных данных в файл 'output.txt'.
     """
@@ -100,7 +97,7 @@ def selectionsort(data):
 
 
 def bubblesort(n, data):
-    for i in range(n - 1): #не делаем последнюю проходку, потому что останется последний элемент
+    for i in range(n-1): #не делаем последнюю проходку, потому что останется последний элемент
         for j in range(n - 1):
             if data[j] > data[j+1]:
                 data[j], data[j+1] = data[j+1], data[j]
