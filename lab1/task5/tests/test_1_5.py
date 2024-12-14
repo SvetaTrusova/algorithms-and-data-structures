@@ -5,7 +5,7 @@ import unittest
 
 
 class TestSelectionSort(unittest.TestCase):
-    def test_single_element(self):
+    def test_should_single_element(self):
         # given
         data = [42]
         exepted_result = [42]
@@ -16,7 +16,7 @@ class TestSelectionSort(unittest.TestCase):
         # then
         self.assertEqual(sorted_data, exepted_result)
 
-    def test_all_elements_equal(self):
+    def test_should_all_elements_equal(self):
         # given
         data = [5, 5, 5, 5]
         exepted_result = [5, 5, 5, 5]
@@ -26,7 +26,7 @@ class TestSelectionSort(unittest.TestCase):
         # then
         self.assertEqual(sorted_data, exepted_result)
 
-    def test_already_sorted_ascending(self):
+    def test_should_already_sorted_ascending(self):
         # given
         data = [1, 2, 3, 4, 5]
         exepted_result = [1, 2, 3, 4, 5]
@@ -37,7 +37,7 @@ class TestSelectionSort(unittest.TestCase):
         # then
         self.assertEqual(sorted_data, exepted_result)
 
-    def test_sorted_descending(self):
+    def test_should_sorted_descending(self):
         #given
         data = [5, 4, 3, 2, 1]
         exepted_result = [1, 2, 3, 4, 5]
@@ -47,9 +47,6 @@ class TestSelectionSort(unittest.TestCase):
 
         # then
         self.assertEqual(sorted_data, exepted_result)
-
-
-class TestTimeMemory(unittest.TestCase):
 
     def test_should_check_functions(self):
         # given

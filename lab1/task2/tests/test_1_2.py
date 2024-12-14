@@ -5,7 +5,7 @@ import unittest
 
 
 class TestInsertionSort1(unittest.TestCase):
-    def test_single_element(self):
+    def test_should_shouldsingle_element(self):
         """Тест на список с одним элементом"""
         # given
         data = [42]
@@ -19,7 +19,7 @@ class TestInsertionSort1(unittest.TestCase):
         self.assertEqual(sorted_data, exeptepted_data)  # Список не изменится
         self.assertEqual(indexes, exeptepted_indexes)  # Индекс остался на месте
 
-    def test_sorted_list(self):
+    def test_should_sorted_list(self):
         """Тест на уже отсортированный список"""
         # given
         exeptepted_data = [1, 2, 3, 4, 5]
@@ -33,7 +33,7 @@ class TestInsertionSort1(unittest.TestCase):
         self.assertEqual(sorted_data, exeptepted_data)  # Список уже отсортирован
         self.assertEqual(indexes, exeptepted_indexes)  # Индексы должны быть на своих местах
 
-    def test_reverse_order(self):
+    def test_should_reverse_order(self):
         """Тест на список в обратном порядке"""
         # given
         exeptepted_data = [1, 2, 3, 4, 5]

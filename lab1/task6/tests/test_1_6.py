@@ -5,7 +5,7 @@ import unittest
 
 
 class TestBubbleSort(unittest.TestCase):
-    def test_single_element(self):
+    def test_should_single_element(self):
         """Проверка на список с одним элементом."""
 
         # given
@@ -19,7 +19,7 @@ class TestBubbleSort(unittest.TestCase):
         # then
         self.assertEqual(sorted_data, expected_result)
 
-    def test_sorted_ascending(self):
+    def test_should_sorted_ascending(self):
         """Проверка на уже отсортированный список по возрастанию."""
 
         # given
@@ -33,7 +33,7 @@ class TestBubbleSort(unittest.TestCase):
         # then
         self.assertEqual(sorted_data, expected_result)
 
-    def test_sorted_descending(self):
+    def test_should_sorted_descending(self):
         """Проверка на список, отсортированный по убыванию."""
 
         # given
@@ -46,9 +46,6 @@ class TestBubbleSort(unittest.TestCase):
 
         # then
         self.assertEqual(sorted_data, exepted_result)
-
-
-class TestFunctionTime(unittest.TestCase):
 
     def test_should_check_functions(self):
         # given

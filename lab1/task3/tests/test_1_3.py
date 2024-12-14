@@ -5,7 +5,7 @@ import unittest
 
 
 class TestInsertionSortNotIncrease(unittest.TestCase):
-    def test_single_element(self):
+    def test_should_single_element(self):
         # given
         data = [42]
         exepted_result = [42]
@@ -16,7 +16,7 @@ class TestInsertionSortNotIncrease(unittest.TestCase):
         # then
         self.assertEqual(sorted_data, exepted_result)
 
-    def test_all_elements_equal(self):
+    def test_should_all_elements_equal(self):
         # given
         data = [5, 5, 5, 5]
         exepted_result = [5, 5, 5, 5]
@@ -27,7 +27,7 @@ class TestInsertionSortNotIncrease(unittest.TestCase):
         # then
         self.assertEqual(sorted_data, exepted_result)
 
-    def test_already_sorted_descending(self):
+    def test_should_already_sorted_descending(self):
         # given
         data = [9, 7, 5, 3, 1]
         exepted_result = [9, 7, 5, 3, 1]
@@ -38,7 +38,7 @@ class TestInsertionSortNotIncrease(unittest.TestCase):
         # then
         self.assertEqual(sorted_data, exepted_result)
 
-    def test_sorted_ascending(self):
+    def test_should_sorted_ascending(self):
         # given
         data = [1, 3, 5, 7, 9]
         exepted_result = [9, 7, 5, 3, 1]
@@ -48,9 +48,6 @@ class TestInsertionSortNotIncrease(unittest.TestCase):
 
         # then
         self.assertEqual(sorted_data, exepted_result)
-
-
-class TestTimeMemory(unittest.TestCase):
 
     def test_should_check_functions(self):
         # given

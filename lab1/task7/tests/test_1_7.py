@@ -5,7 +5,7 @@ import unittest
 
 class TestFunctionTime(unittest.TestCase):
 
-    def test_should_check_functions(self):
+    def test_should__check_functions(self):
         # given
         expected_result = [(1, 1), (5, 3), (6, 2), (7, 4), (8, 5), (9, 6)]
         data = [1, 6, 5, 7, 8, 9]

@@ -6,7 +6,7 @@ import time
 def memory_usage_process():
     """Возвращает общее количество памяти (в байтах), использованное текущим процессом."""
     process = psutil.Process(os.getpid())  # Получаем объект текущего процесса
-    return process.memory_info().rss / 2**20 # rss - Resident Set Size, фактическое использование памяти процессом
+    return process.memory_info().rss / 2**20  # rss - Resident Set Size, фактическое использование памяти процессом
 
 
 def read_input(path_input) -> tuple[int, list[int]]:
