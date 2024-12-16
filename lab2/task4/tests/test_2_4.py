@@ -1,4 +1,3 @@
-#
 from lab2.task4.src.task4 import binary_search
 import time
 import tracemalloc
@@ -7,21 +6,33 @@ import unittest
 
 class TestInversions(unittest.TestCase):
     def test_should_check_existing_number(self):
-        # Проверка поиска числа, которое есть в списке
+        # given
         arr = [1, 3, 5, 7, 9, 11]
+
+        # when
         result = binary_search(arr, 7)
+
+        # then
         self.assertEqual(result, 3)  # Индекс числа 7 в массиве - 3
 
     def test_should_check_first_element(self):
-        # Проверка поиска первого элемента в списке
+        # given
         arr = [1, 3, 5, 7, 9, 11]
+
+        # when
         result = binary_search(arr, 1)
+
+        # then
         self.assertEqual(result, 0)  # Индекс числа 1 в массиве - 0
 
     def test_should_check_last_element(self):
-        # Проверка поиска последнего элемента в списке
+        # given
         arr = [1, 3, 5, 7, 9, 11]
+
+        # when
         result = binary_search(arr, 11)
+
+        # then
         self.assertEqual(result, 5)  # Индекс числа 11 в массиве - 5
 
     def test_should_check_used_memory_and_time(self):

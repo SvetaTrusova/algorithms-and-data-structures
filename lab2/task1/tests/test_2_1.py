@@ -1,4 +1,3 @@
-#
 from lab2.task1.src.task1 import to_sort, merge_sort
 import time
 import tracemalloc
@@ -8,6 +7,7 @@ import unittest
 class TestMergeSort(unittest.TestCase):
     def test_should_check_insertion_sort(self):
         """Проверка сортировки слиянием"""
+
         # given
         data = [1, 8, 4, 2, 3, 7, 5, 6, 9, 0]
         exepted_data = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]

@@ -9,7 +9,7 @@ class TestMergeSortOutput(unittest.TestCase):
         unsorted_list = [1, 8, 2, 1, 4, 7, 3, 2, 3, 6]
         expected_time = datetime.timedelta(2)
         expected_result = "\n".join(['1 2 1 8', '1 3 1 8', '4 5 1 4', '1 5 1 8', '6 7 3 7', '6 8 2 7',
-                           '9 10 3 6', '6 10 2 7', '1 10 1 8', '1 1 2 2 3 3 4 6 7 8'])
+                            '9 10 3 6', '6 10 2 7', '1 10 1 8', '1 1 2 2 3 3 4 6 7 8'])
 
         # When
         start_time = datetime.datetime.now()  # Запускаем счётчик времени

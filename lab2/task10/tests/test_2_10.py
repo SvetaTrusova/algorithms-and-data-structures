@@ -8,33 +8,43 @@ import tracemalloc
 class TestMergeSort(unittest.TestCase):
 
     def test_should_check_merge_sort_sorted(self):
-        # Test sorting an already sorted list
+        # given
         list_arr = [1, 2, 3, 4, 5]
         result = merge_sort(list_arr)
+
+        # then
         self.assertEqual(result, [1, 2, 3, 4, 5])
 
     def test_should_check_merge_sort_reverse(self):
-        # Test sorting a list in reverse order
+        # given
         list_arr = [5, 4, 3, 2, 1]
         result = merge_sort(list_arr)
+
+        # then
         self.assertEqual(result, [1, 2, 3, 4, 5])
 
     def test_should_check_merge_sort_unsorted(self):
-        # Test sorting an unsorted list
+        # given
         list_arr = [3, 1, 4, 5, 2]
         result = merge_sort(list_arr)
+
+        # then
         self.assertEqual(result, [1, 2, 3, 4, 5])
 
     def test_should_check_merge_sort_empty(self):
-        # Test sorting an empty list
+        # given
         list_arr = []
         result = merge_sort(list_arr)
+
+        # then
         self.assertEqual(result, [])
 
     def test_should_check_merge_sort_single_element(self):
-        # Test sorting a list with one element
+        # given
         list_arr = [1]
         result = merge_sort(list_arr)
+
+        # then
         self.assertEqual(result, [1])
 
     def test_should_check_used_memory_and_time(self):
