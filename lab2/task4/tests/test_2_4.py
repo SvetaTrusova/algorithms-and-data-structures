@@ -1,3 +1,4 @@
+#
 from lab2.task4.src.task4 import binary_search
 import time
 import tracemalloc

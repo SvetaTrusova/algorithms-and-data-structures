@@ -1,6 +1,4 @@
 from lab2.task2.src.task2 import merge_sort_output
-import time
-import tracemalloc
 import unittest
 import datetime
 

@@ -1,3 +1,4 @@
+#
 from lab2.task1.src.task1 import to_sort, merge_sort
 import time
 import tracemalloc

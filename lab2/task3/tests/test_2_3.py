@@ -1,3 +1,4 @@
+#
 from lab2.task3.src.task3 import to_sort, count_inversions
 import time
 import tracemalloc
