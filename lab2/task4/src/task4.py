@@ -41,8 +41,7 @@ def main(path_input, path_output):
     time_end = time.perf_counter() - time_st
     memory_after = memory_usage_process()
 
-    print("Результат:")
-    print(result)
+    print(f"Результат: \n {result}")
 
     write_file(result, path_output)
     print(f"Затраченная память: {memory_after - memory_before} Megabytes")

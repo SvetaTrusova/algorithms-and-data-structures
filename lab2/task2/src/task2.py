@@ -59,8 +59,7 @@ def main(input_file, output_file):
 
     result = "\n".join(map(str, res)) + '\n' + " ".join(map(str, arr))
 
-    print("Результат:")
-    print(result)
+    print(f"Результат: \n{result}")
     write_file(result, output_file)
     print(f"Затраченная память: {memory_after - memory_before} Megabytes")
     print(f"Время выполнения: {time_end: .4f} секунд.")

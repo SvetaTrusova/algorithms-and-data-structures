@@ -81,8 +81,7 @@ def main(path_input, path_output):
 
     memory_after = memory_usage_process()
 
-    print("Результат:")
-    print(result)
+    print(f"Результат: \n{result}")
 
     write_output(str(result), path_output)
 

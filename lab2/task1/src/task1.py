@@ -53,8 +53,7 @@ def main(path_input, path_output):
     time_st = time.perf_counter()
     result = to_sort(arr)
     time_end = time.perf_counter() - time_st
-    print("Результат:")
-    print(norm_sorted_arr)
+    print(f"Результат: \n{norm_sorted_arr}")
     write_output(norm_sorted_arr, path_output)
     print(f"Затраченная память: {memory_after - memory_before} Megabytes")
     print(f"Время выполнения: {time_end: .4f} секунд.")
